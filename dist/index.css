@@ -1,0 +1,35 @@
+:root {
+    --color-1: #07689f;
+    --color-2: #a2d5f2;
+    --color-3: #fafafa;
+    --color-4: #ff7e67;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+}
+
+.header {
+    display: grid;
+}
+
+.sidebar {
+    display: grid;
+}
+
+
+.content {
+    display: grid;
+}
+
+
+footer {
+    display: grid;
+}
+
