@@ -11,55 +11,90 @@
     <div class="container">
 
         <div class="header">
-            <ul>
-                <li class="right">
-                    <a href="#">
-                        <img src="../src/img/menu.svg" alt="This is the menu">
-                    </a>
-                </li>
-                <li class="right">
-                    <a href="">
-                        <img src="../src/img/home.svg" alt="This is the Home">
-                    </a>
-                </li>
-                <li class="right">
-                    <form action="#">
-                        <input type="text" placeholder="search" name="search">
-                        <button type="submit">
-                            <img src="../src/img/search.svg" alt="">
+            <div class="header-wrap">
+                <ul>
+                    <li class="right">
+                        <a href="#">
+                            <img src="../src/img/menu.svg" alt="This is the menu">
+                        </a>
+                    </li>
+                    <li class="right">
+                        <a href="">
+                            <img src="../src/img/home.svg" alt="This is the Home">
+                        </a>
+                    </li>
+                    <li class="right">
+                        <form class="form" action="#">
+                            <input type="text" placeholder="search" name="search">
+                            <button type="submit">
+                                <img src="../src/img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="left">
+                        <button class="open-form">
+                            <img src="../src/img/plus.svg" alt="This is the add button">
                         </button>
-                    </form>
-                </li>
-            </ul>
-            <ul>
-                <li class="left">
-                    <button>
-                        <img src="../src/img/plus.svg" alt="This is the add button">
-                    </button>
-                </li>
-                <li class="left">
-                    <a href="#" class="notification">
-                        <img src="../src/img/bell.svg" alt="This the notification bell">
-                        <span class="badge"></span>
-                    </a>
-                </li>
-            </ul>
+                        <div class="pop-form">
+                            <div class="bookPopUp">
+                                <div class="formPopUp" id="popUpForm">
+                                    <form action="" class="formContainer">
+                                        <p><b>Please, Enter Your Task</b></p>
+                                        <label for="title">Title</label>
+                                        <input type="text" id="title" placeholder="Task Title" name="title" required>
+                                        <label for="description">Description</label>
+                                        <input type="text" id="description" placeholder="Task Description" name="description">
+                                        <label for="Notes">Notes</label>
+                                        <input type="text" id="notes" placeholder="Task Notes" name="Notes">
+                                        <div class="progress">
+                                            <label for="status">Priority</label>
+                                            <select name="status" id="status">
+                                            <option value="High">High</option>
+                                            <option value="Medium">Medium</option>
+                                            <option value="Low">Low</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="lol">Submit</button>
+                                            <button type="button" class="btn-cancel">Cancel</button>
+                                        </div>                            
+                                    </form>
+                                </div>
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="left">
+                        <a href="#" class="notification">
+                            <img src="../src/img/bell.svg" alt="This the notification bell">
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="sidebar">
-            <div class="personal">
-                personal
-            </div>
-            <div class="work">
-                work
+            <div class="sidebar-wrap">
+                <a href="">
+                    personal
+                </a>
+                <a href="">
+                    work
+                </a>
             </div>
         </div>
 
-        <div class="content"></div>
+        <div class="content">
+
+        </div>
+
+
         <div class="footer">
             <div class="copyright">
                 madeByCrypticVanya
             </div>
-            <ul>
+            <ul class="social-media">
                 <li>
                     <a href="">
                         <img src="../src/img/instagram.svg" alt="">
@@ -80,5 +115,6 @@
 
 
     </div>
+    <script src="../src/script.js"></script>
 </body>
 </html>
